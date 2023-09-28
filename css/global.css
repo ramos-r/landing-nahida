@@ -1,0 +1,25 @@
+body {
+  background: #f3efe7;
+  margin: 0px;
+  font-family: 'Petrona', sans-serif;
+  color: #465420;
+  position: relative;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+
+/* .scroll-btn {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  padding: 20px;
+  background-color: #000;
+  border-radius: 80px;
+} */

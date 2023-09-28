@@ -1,0 +1,129 @@
+.history {
+  background: #fff;
+  border-radius: 0px 0px 40px 40px;
+  box-shadow: 0px 2px 4px 0px rgba(100, 114, 71, 0.05);
+}
+
+.history-info {
+  width: 80%;
+  padding: 40px 100px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.history-info::before {
+  content: "";
+  position: absolute;
+  background: url("../assets/sumeru.svg");
+  object-fit: cover;
+  object-position: top center;
+  width: 50px;
+  height: 50px;
+  right: -60px;
+  top: 40px;
+  opacity: 0.2;
+}
+
+.history-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+}
+
+.history img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 0px 0px 0px 40px;
+}
+
+.history-p,
+.history-p-alt {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 40px;
+  max-width: 60ch;
+  padding-top: 20px;
+}
+
+.history-p-alt,
+.history-h2 {
+  text-align: right;
+}
+
+.history-h2 {
+  color: #d2bc99;
+  position: relative;
+  font-size: 1.4rem;
+  line-height: 48px;
+  font-weight: 700;
+}
+
+.history-h2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background: #d2bc99;
+  top: 40px;
+}
+
+@media (max-width: 1600px) {
+  .history-h2 {
+    font-size: 1.25rem;
+  }
+  .history-p,
+  .history-p-alt {
+    font-size: 1.1rem;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .history-info {
+    padding: 20px 40px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .history-p,
+  .history-p-alt {
+    line-height: 30px;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .history-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+  .history-info {
+    width: 100%;
+    padding: 0px;
+  }
+  .history img {
+    display: none;
+  }
+  .history-info::before {
+    display: none;
+  }
+  .history-h2 {
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .history-p,
+  .history-p-alt {
+    padding-top: 10px;
+    line-height: 28px;
+    text-align: left;
+    max-width: 60ch;
+  }
+}

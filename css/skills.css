@@ -1,0 +1,292 @@
+.skills {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.skills::before {
+  content: "";
+  position: absolute;
+  background: #adbe7c;
+  width: 160px;
+  height: 110%;
+  top: -50px;
+  right: 0;
+  z-index: -1;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 1200px;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+.skills-h1 {
+  font-family: "Baloo 2", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.skills-h1 span {
+  color: #a9c35f;
+}
+
+.skills-ul {
+  display: inline-flex;
+  list-style: none;
+  gap: 20px;
+  margin-bottom: 60px;
+  padding: 0px;
+}
+
+.skills-ul li {
+  font-size: 1.125rem;
+  line-height: 20px;
+  font-weight: 500;
+  text-align: center;
+  padding: 8px 12px;
+  background: #93b437;
+  color: #fff;
+  border-radius: 40px;
+  box-shadow: 0px 4px 0px 0px #89985e;
+}
+
+.skill-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 40px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0px 2px 4px 0px rgba(100, 114, 71, 0.05);
+  padding: 40px;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.skill-container::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 40px;
+  left: -4px;
+  top: 80px;
+  background-image: linear-gradient(#93b437, #dff4a3);
+}
+
+.skill-type {
+  font-family: "Fredoka", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.skill-name {
+  font-family: "Fredoka";
+  font-size: 1.5rem;
+  line-height: 30px;
+  font-weight: 500;
+  color: #93b437;
+  padding-bottom: 20px;
+}
+
+.skill-p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 24px;
+  color: #333;
+}
+
+.skill-p strong {
+  color: #93b437;
+  font-weight: 800;
+}
+
+.skill-p span {
+  color: #a2aa90;
+  font-weight: 700;
+}
+
+.pyro-span strong {
+  color: #EF7938;
+}
+
+.hydro-span strong {
+  color: #4CC2F1;
+}
+
+.electro-span strong {
+  color: #AF8EC1;
+}
+
+.hydro,
+.pyro,
+.electro {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 4px;
+  padding: 0px;
+}
+
+@media (max-width: 1400px) {
+  .skills-container {
+    max-width: 1400px;
+    padding: 40px 40px 0px 40px;
+  }
+  .skill-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 40px;
+    position: relative;
+    margin-bottom: 40px;
+    gap: 20px;
+  }
+  .skills-ul li {
+    font-size: 1.25rem;
+    padding: 5px 10px;
+  }
+  .skill-p {
+    font-size: 1.125rem;
+    max-width: 80ch;
+  }
+  .skill-icon {
+    width: 50px;
+    height: 50px;
+  }
+  .skill-name {
+    font-size: 1.4rem;
+    line-height: 24px;
+    position: relative;
+  }
+  .skill-deco {
+    display: none;
+  }
+  .skills::before {
+    content: "";
+    position: absolute;
+    background: #adbe7c;
+    width: 60px;
+    height: 108%;
+    top: -50px;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 800px) {
+  .skills-container {
+    max-width: 800px;
+    padding: 40px 40px 0px 40px;
+  }
+  .skill-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 40px;
+    position: relative;
+    margin-bottom: 40px;
+    gap: 20px;
+  }
+  .skills-h1 {
+    font-size: 2.25rem;
+  }
+  .skills-ul {
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+  .skills-ul li {
+    font-size: 1.25rem;
+    padding: 5px 10px;
+  }
+  .skill-p {
+    font-size: 1.125rem;
+    max-width: 50ch;
+  }
+  .skill-icon {
+    width: 50px;
+    height: 50px;
+  }
+  .skill-name {
+    font-size: 1.4rem;
+    line-height: 24px;
+    position: relative;
+  }
+  .skill-deco {
+    display: none;
+  }
+  .skills::before {
+    content: "";
+    position: absolute;
+    background: #adbe7c;
+    width: 60px;
+    height: 108%;
+    top: -50px;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-container {
+    max-width: 600px;
+    padding: 40px 20px 0px 20px;
+  }
+  .skill-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 20px;
+
+    position: relative;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+  .skills-h1 {
+    font-size: 2rem;
+  }
+  .skills-ul {
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+  .skills-ul li {
+    font-size: 1rem;
+    padding: 4px 8px;
+  }
+  .skill-container::before {
+    display: none;
+  }
+  .skill-p {
+    font-size: 1rem;
+    max-width: 30ch;
+  }
+  .skill-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .skill-name {
+    font-size: 1.25rem;
+    position: relative;
+  }
+  .skill-deco {
+    display: none;
+  }
+  .skills::before {
+    content: "";
+    position: absolute;
+    background: #adbe7c;
+    width: 60px;
+    height: 105%;
+    top: -50px;
+    right: 0;
+    z-index: -1;
+  }
+  /* .skill-name::before {
+    content: '';
+    position: absolute;
+    background: url('../assets/normal-attack.webp');
+    width: 40px;
+    height: 40px;
+  } */
+}

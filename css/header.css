@@ -1,0 +1,78 @@
+.header {
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(100, 114, 71, 0.05);
+}
+
+.header-container {
+  display: flex;
+  max-width: 1200px;
+  justify-content: space-between;
+  padding: 20px 40px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.header-menu a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  line-height: 20px;
+  font-weight: bold;
+  color: #465420;
+  transition: 0.5s;
+  position: relative;
+  transition: 0.3s;
+}
+
+
+.header-menu a:hover {
+  color: #93B437;
+}
+
+.header-menu a:hover::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background: url('../assets/dendro.svg') no-repeat center;
+  width: 20px;
+  height: 20px;
+  left: -20px;
+}
+
+@media (max-width: 800px) {
+  .header-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .header-menu {
+    gap: 20px;
+  }
+  .header-menu a {
+    padding: 8px 16px;
+    background: #fcfcfc;
+    border-radius: 4px;
+    transition: 0.5s;
+    border: 2px solid #fafafa;
+  }
+  .header-container img {
+    display: block;
+    max-width: 200px;
+  }
+  .header-menu a:hover {
+    background: #fafafa;
+    border-bottom: 2px solid #ADBE7C;
+    color: #465420;
+  }
+  .header-menu a:hover::before {
+    display: none;
+  }
+}

@@ -1,0 +1,34 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #121212;
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+}
+
+.footer-p {
+  text-align: center;
+  font-family: 'baloo 2',sans-serif;
+  font-size: 1.125rem;
+  line-height: 32px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.footer-p a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+  padding: 0px 4px;
+  position: relative;
+  border-radius: 4px;
+  background: #222;
+  transition: 0.5s;
+}
+
+
+.footer-p a:hover {
+  background: #333;
+}
